@@ -22,9 +22,9 @@ class ValidatorResolver(private val validators: List<Validator<*>>) {
         val invalidList = ArrayList<ValidationState>()
 
         for (validator in validators) {
-            when (val state = validator.isValid()) {
-                is ValidationState.InValid -> invalidList.add(state)
-                is ValidationState.Valid -> Unit
+            val state = validator.inValidList()
+            for (i in state.indices) {
+                invalidList.add(state[i])
             }
         }
         return invalidList
