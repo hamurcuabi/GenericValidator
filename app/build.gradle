@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.emrehmrc.validator"
-        minSdk 21
-        targetSdk 30
+        minSdk 23
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -31,7 +31,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
-        dataBinding = true
+        viewBinding = true
     }
 }
 

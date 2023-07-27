@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <data>
-
-        <variable
-            name="otherUser"
-            type="com.emrehmrc.validator.MainActivity.OtherUser" />
-        <variable
-            name="user"
-            type="com.emrehmrc.validator.MainActivity.User" />
-
-    </data>
-
-    <LinearLayout
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -25,14 +13,14 @@
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:hint="name"
-            android:text="@={user.name}" />
+            android:text="" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             android:hint="email"
-            android:text="@={otherUser.email}" />
+            android:text="" />
 
         <Button
             android:id="@+id/btnValidate"
@@ -41,4 +29,3 @@
             android:layout_margin="8dp"
             android:text="Lets validate" />
     </LinearLayout>
-</layout>
